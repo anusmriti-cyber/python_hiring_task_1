@@ -70,3 +70,20 @@ Follow these steps to get started:
 2. **Implement a command-line interface** for running the program.
 3. **Add documentation** to explain the program's functionality.
 4. **Implement error handling** for handling edge cases.
+## Running the Complete Program
+*Install dependencies:*
+pip install -r requirements.txt
+
+*Generate sample images:*
+python sample_data_generation.py
+
+This will create 50 random transparent images in the input_images/ folder.
+
+## Pack images into PDF:
+python task_1_starter_code.py
+This script will:Preprocess all images (remove transparency and crop visible area) Automatically resize them to fit efficiently on A4 pages
+Generate the final file output.pdf
+
+## Output:
+The generated PDF will be saved as output.pdf in the current directory.
+Each page will contain as many images as can fit while preserving aspect ratio.
